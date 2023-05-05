@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "identity-platform-385807",
+  "private_key_id": "a87fbe237bcba596916e2c710d66e2fd496e052f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDb/D018AjhAs/4\nrxChlAaDfiQ358DoyP/88PbRLzOecKjwsEB0ADyaVTHTn5RHVimfu+srP0meeQMh\nmFDOLKemycXfmZ2mO8oOKQonEdCsEtu92pUAuU6AhZH4JcjrSL/3oD/kXnLj4OaA\nTWF8tFDxXkNLcGe5FuYaKaSsIx5AsiCJSMpv25MsmJ7lUYY/FGdAEjwkWmQSgM/+\nUDbCs2PKymtoy4i3L8d9hfasSKjeC0NV166wNswFW7clnnALo2PZd0JklMQ90c0m\n67fIgJ8cv0Zq1BQGskT62dF8xDzIeipy0O8b3GGN6X5augnK0IpQ/Bx3mKI+O5J2\nnBY3XHyhAgMBAAECggEARM++BeUzoc7TZyK7vQ8kinUmtyYTPb3B9Ukaq4xsRR9Q\neRloz+BTFKOZlmzQYRAerQyHH1wIlz2bMSMIA7YMKyvqbWsL2TfSmGNV/aqg73Jm\nshhxi2xrleAyLMEE/DQheD/0PGce4RE0iOWrnOp6d0XZHvvmNgtnpr9n90B08h8x\nakZltpcsmcMqRb0sGuBjSfrlElhMvEoKPgL0Z8oq3PD57+OTgiQNhuglK1DNQGqC\n4/+wq2qntCOG889s+3sI+2jqA007akcPTbXBPo6OTJ20zQK7VQA97AwlEfVYMI45\n4Yeulblfh28yjp3fJclgcg9ZJAWmTJy1+hwX23KHkQKBgQD1YBrGfpgmnbT3Kl8Z\nZ3DhzpZs0NQQJ7NqTyztsVoewfmuX63zpYwgdCxbJ2JtU+FKgQMlrKCPvE/8/pZV\nhaK07gFlOEG2UTHkrbnyiJooVpvtLf2X7H1Ftm5JIBFZrp8JllNJ6bVPR2qfnE9D\nlAbejtI/V8VSOkfLYhF2k1GJuwKBgQDlgrHWOYgd+SNxRasfKua6gwoIZ7AZN5e3\nzaSg/2JT4Y5EcUt+uCHVWrMef3rhXM+rOcyic0lFipdm8SeQH02Aomh1klWRZuyd\nCZcVqsxg9KSBNvMNdrjU9Hjn17LPckoW7I46SGGmBWAGe3ojIKcgc5fENN6470jp\nguhoTPKvUwKBgQDLO2tR5n6M1WiSozSbLPLxBBPRUvGh49AViDh1MsSq3wy3IaZJ\nPF+gbbhjU26RkLzz4YFCzgU6p8U0jYTklsfZxZvAQ2Uh5YRGnKF7wSq1qG6Dduko\n0QY9HEmiJX5ZYml1Hl4jxP+YB1XHl0aLeWprIa4AKulTHtRiHvrJ1GDfiwKBgDZo\nNSBDozD3zp8blOVeljPAvLAhZG2V8DFyXoSMBhM8dS1kbjEsFVkulyezsL2b8t70\nZL5d9hC2Og39PRO9V/IWjgzRE9fUPmM70sUgKDMTy6uWCyg17LsO+Vp8l7b1sPqe\nOVk3r25b99eRjfKl2vimbmPk5KeSkgZJMi8HjsBhAoGBAIMFQs+HRKFuTCqWuYOn\nmHUIKcOHAMgVL0brY566U9UsKTkFZu0q8rEvfxIuyEDEUCtgQBDrxMl4YrBl4Bol\nxQMSSaCBfugoyfTo7Q2lxAUYhWl2Qfj1rlxFT76HjKbStOdbZtQz2Vr8HdkH/aLA\nHMlk6S5ZWuJj0IJhqNjArKpv\n-----END PRIVATE KEY-----\n",
+  "client_email": "identity-platform-demo@identity-platform-385807.iam.gserviceaccount.com",
+  "client_id": "103787406137859468647",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/identity-platform-demo%40identity-platform-385807.iam.gserviceaccount.com"
+}
