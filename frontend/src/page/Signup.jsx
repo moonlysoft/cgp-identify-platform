@@ -50,7 +50,7 @@ const Signup = () => {
           <div className="w-full max-w-md space-y-8">
             <div>
               <Text className="text-4xl text-white text-center font-bold mb-2">
-                Focus<span className="text-tertiary">App</span>
+                Cloud<span className="text-tertiary"> Identity</span>
               </Text>
 
               <h2 className="text-white text-center text-base  tracking-tight text-gray-900">
