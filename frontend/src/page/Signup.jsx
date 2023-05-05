@@ -3,15 +3,29 @@ import Text from "../components/elements/Text";
 import { NavLink, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import { Dropdown, Option } from "../components/elements/Dropdown/Dropdown";
 
 const Signup = () => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [optionValue, setOptionValue] = useState("Default");
+  const handleSelect = (e) => {
+    console.log(e.target.value);
+    setOptionValue(e.target.value);
+  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
+
+    console.log("optionValue: " + optionValue);
+    if (optionValue !== "Default") {
+      auth.tenantId = optionValue;
+      console.log("tenantId set to: " + auth.tenantId);
+    } else {
+      auth.tenantId = null;
+    }
 
     await createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -43,7 +57,19 @@ const Signup = () => {
                 Are you new? Sign up today
               </h2>
             </div>
-
+            <div>
+              <Dropdown
+                formLabel="Select a tenant"
+                buttonText="Send form"
+                onChange={handleSelect}
+                action="/"
+              >
+                <Option selected value="Select a tenant" />
+                <Option value="Default" />
+                <Option value="Kisakallio-b6mf8" />
+                <Option value="Pajulahti-5a91o" />
+              </Dropdown>
+            </div>
             <form onSubmit={onSubmit} className="mt-8 space-y-6">
               <div className=" space-y-6 rounded-md shadow-sm">
                 <div>

@@ -3,14 +3,29 @@ import Text from "../components/elements/Text";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { NavLink, useNavigate } from "react-router-dom";
+import { Dropdown, Option } from "../components/elements/Dropdown/Dropdown";
 
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [optionValue, setOptionValue] = useState("Default");
+  const handleSelect = (e) => {
+    console.log(e.target.value);
+    setOptionValue(e.target.value);
+  };
 
   const onLogin = (e) => {
     e.preventDefault();
+
+    console.log("optionValue: " + optionValue);
+    if (optionValue !== "Default") {
+      auth.tenantId = optionValue;
+      console.log("tenantId set to: " + auth.tenantId);
+    } else {
+      auth.tenantId = null;
+    }
+
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
@@ -35,10 +50,19 @@ const Login = () => {
                 <Text className="text-4xl text-white text-center font-bold mb-2">
                   Cloud<span className="text-tertiary"> Identity</span>
                 </Text>
-
-                <h2 className="text-white text-center text-base  tracking-tight text-gray-900">
-                  Welcome, Name Name
-                </h2>
+              </div>
+              <div>
+                <Dropdown
+                  formLabel="Select a tenant"
+                  buttonText="Send form"
+                  onChange={handleSelect}
+                  action="/"
+                >
+                  <Option selected value="Select a tenant" />
+                  <Option value="Default" />
+                  <Option value="Kisakallio-b6mf8" />
+                  <Option value="Pajulahti-5a91o" />
+                </Dropdown>
               </div>
 
               <form className="mt-8 space-y-6">
